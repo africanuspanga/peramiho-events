@@ -34,41 +34,41 @@ export default function Hero() {
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="max-w-3xl">
-          {/* Badge */}
+          {/* Word Mark Logo */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full border border-white/20 mb-6"
+            className="mb-8"
           >
-            <span className="w-2 h-2 bg-emerald-primary rounded-full animate-pulse" />
-            <span className="text-sm text-white/90 font-medium">
-              Tanzania&apos;s Premier Event Production Company
-            </span>
+            <Image
+              src="/Peramiho Events logo.png"
+              alt="PERAMIHO Events"
+              width={280}
+              height={80}
+              className="w-auto h-16 sm:h-20"
+              priority
+            />
           </motion.div>
 
-          {/* Headline */}
+          {/* Headline - Max 4 words */}
           <motion.h1
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.1 }}
             className="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-[1.1] mb-6"
           >
-            Professional Event{" "}
-            <span className="text-emerald-primary">Production</span> & Equipment
-            Rental in Tanzania
+            Premium <span className="text-emerald-primary">Event</span> Solutions
           </motion.h1>
 
-          {/* Subheadline */}
+          {/* Description - Max 12 words */}
           <motion.p
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="text-lg sm:text-xl text-white/80 leading-relaxed mb-8 max-w-2xl"
           >
-            From sound systems and staging to full event production, PERAMIHO
-            EVENTS AND DESIGNING delivers reliable, high-quality solutions for
-            events of all sizes across Dar es Salaam.
+            Professional event production and equipment rental in Dar es Salaam since 2011.
           </motion.p>
 
           {/* CTA Buttons */}

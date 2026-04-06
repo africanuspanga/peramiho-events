@@ -12,6 +12,9 @@ const clients = [
   { name: "TPA", logo: "/client logos/TPA Logo_bg_white.png" },
   { name: "CCM", logo: "/client logos/Logo_of_the_Chama_Cha_Mapinduzi.svg.png" },
   { name: "TIA", logo: "/client logos/Tanzania-Institute-of-Accountancy-Logo.png" },
+  { name: "UDSM", logo: "/client logos/logo_ud.png" },
+  { name: "Partner", logo: "/client logos/images-Photoroom.png" },
+  { name: "Client", logo: "/client logos/40f799023e5903dfb6ed70fc9644142a.jpg" },
 ];
 
 export default function Clients() {
@@ -36,7 +39,7 @@ export default function Clients() {
         </motion.div>
 
         {/* Logo Grid */}
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 lg:gap-12">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6">
           {clients.map((client, index) => (
             <motion.div
               key={index}
@@ -44,9 +47,9 @@ export default function Clients() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: index * 0.05 }}
-              className="group flex items-center justify-center p-6 bg-slate-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300"
+              className="group flex items-center justify-center p-4 bg-slate-50 rounded-2xl hover:bg-white hover:shadow-lg transition-all duration-300"
             >
-              <div className="relative w-full h-16 grayscale hover:grayscale-0 transition-all duration-300 opacity-70 hover:opacity-100">
+              <div className="relative w-full h-14">
                 <Image
                   src={client.logo}
                   alt={client.name}

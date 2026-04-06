@@ -40,7 +40,7 @@ const services = [
     icon: Camera,
     title: "Videography & Photography",
     description: "Professional video coverage, photography, and albums.",
-    image: "/istockphoto-814173388-612x612.jpg",
+    image: "/istockphoto-2216677600-612x612.jpg",
   },
   {
     icon: Utensils,
