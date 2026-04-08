@@ -111,41 +111,6 @@ export default function Hero() {
             ))}
           </motion.div>
         </div>
-
-        {/* Floating Cards - Desktop Only, Repositioned */}
-        <motion.div
-          initial={{ opacity: 0, x: 50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 1, delay: 0.6 }}
-          className="hidden xl:block absolute right-4 2xl:right-8 top-1/2 -translate-y-1/2 space-y-4"
-        >
-          <div className="glass p-4 rounded-2xl border border-white/20 shadow-2xl animate-float">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-emerald-primary/20 rounded-xl flex items-center justify-center">
-                <Award className="w-6 h-6 text-emerald-primary" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-white">15+</p>
-                <p className="text-sm text-white/70">Years Experience</p>
-              </div>
-            </div>
-          </div>
-
-          <div
-            className="glass p-4 rounded-2xl border border-white/20 shadow-2xl animate-float"
-            style={{ animationDelay: "1s" }}
-          >
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 bg-gold-accent/20 rounded-xl flex items-center justify-center">
-                <Calendar className="w-6 h-6 text-gold-accent" />
-              </div>
-              <div>
-                <p className="text-2xl font-bold text-white">1000+</p>
-                <p className="text-sm text-white/70">Events Completed</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
 
       {/* Bottom Gradient */}

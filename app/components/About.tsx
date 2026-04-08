@@ -29,7 +29,7 @@ export default function About() {
               {/* Main Image - Using local/about us section.jpeg */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/local images/about us section.jpeg"
+                  src="/local%20images/about%20us%20section.jpeg"
                   alt="PERAMIHO Events Team"
                   width={600}
                   height={700}

@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const galleryImages = [
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.54.03.jpeg", alt: "Event Setup" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.54.06 (1).jpeg", alt: "Stage Design" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.54.06.jpeg", alt: "Lighting Setup" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.08.jpeg", alt: "Event Production" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.18.jpeg", alt: "Sound System" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.20 (1).jpeg", alt: "Corporate Event" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.20.jpeg", alt: "Branding Setup" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.22.jpeg", alt: "Wedding Event" },
-  { src: "/local images/WhatsApp Image 2026-04-08 at 12.56.24.jpeg", alt: "Concert Setup" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.03.jpeg", alt: "Event Setup" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.06%20(1).jpeg", alt: "Stage Design" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.06.jpeg", alt: "Lighting Setup" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.08.jpeg", alt: "Event Production" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.18.jpeg", alt: "Sound System" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.20%20(1).jpeg", alt: "Corporate Event" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.20.jpeg", alt: "Branding Setup" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.22.jpeg", alt: "Wedding Event" },
+  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.24.jpeg", alt: "Concert Setup" },
 ];
 
 export default function Gallery() {
@@ -65,7 +65,7 @@ export default function Gallery() {
                   transition={{ duration: 0.5, delay: index * 0.05 }}
                   className="group relative flex-shrink-0 w-[280px] sm:w-[320px]"
                 >
-                  <div className="relative h-[200px] sm:h-[240px] rounded-2xl overflow-hidden shadow-lg">
+                  <div className="relative h-[200px] sm:h-[240px] rounded-2xl overflow-hidden shadow-lg bg-slate-200">
                     <Image
                       src={image.src}
                       alt={image.alt}
