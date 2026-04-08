@@ -17,7 +17,7 @@ const serviceCategories = [
     icon: Volume2,
     title: "Sound Systems",
     description: "Professional audio solutions for events of any size",
-    image: "/istockphoto-1135340900-612x612.jpg",
+    image: "/gallery/gallery-5.jpeg",
     items: [
       "Heavy-duty digital sound systems",
       "Mini sound systems for intimate gatherings",
@@ -49,7 +49,7 @@ const serviceCategories = [
       "Pagoda tents for elegant events",
       "Clear span structures",
       "Tent flooring and carpeting",
-      " sidewalls and accessories",
+      "Sidewalls and accessories",
     ],
   },
   {
@@ -69,7 +69,7 @@ const serviceCategories = [
     icon: Monitor,
     title: "LED Screens",
     description: "High-definition displays for maximum impact",
-    image: "/istockphoto-134423308-612x612.jpg",
+    image: "/gallery/gallery-2.jpeg",
     items: [
       "Indoor LED video walls",
       "Outdoor LED screens",
@@ -82,7 +82,7 @@ const serviceCategories = [
     icon: Camera,
     title: "Media Services",
     description: "Capture every moment professionally",
-    image: "/istockphoto-2216677600-612x612.jpg",
+    image: "/gallery/gallery-9.jpeg",
     items: [
       "Professional videography",
       "Event photography",
@@ -108,7 +108,7 @@ const serviceCategories = [
     icon: Package,
     title: "Equipment Hiring",
     description: "Essential equipment for any event",
-    image: "/istockphoto-2178715155-612x612.jpg",
+    image: "/empty-seats-row-convention-center.jpg",
     items: [
       "Chairs and tables (various styles)",
       "VIP chairs and sofas",
