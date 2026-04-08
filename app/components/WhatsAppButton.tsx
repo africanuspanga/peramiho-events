@@ -27,12 +27,12 @@ export default function WhatsAppButton() {
         <div className="absolute inset-0 bg-green-500 rounded-full animate-pulse opacity-40" style={{ animationDelay: '0.5s' }} />
         
         {/* Main Button with WhatsApp PNG */}
-        <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
+        <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 bg-white">
           <Image
             src="/whatsapp.png"
             alt="WhatsApp"
             fill
-            className="object-cover"
+            className="object-contain p-1"
           />
         </div>
       </div>

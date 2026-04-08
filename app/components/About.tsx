@@ -26,10 +26,10 @@ export default function About() {
             className="relative"
           >
             <div className="relative">
-              {/* Main Image - Using local/about us section.jpeg */}
+              {/* Main Image - Using gallery/about-us-section.jpeg */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/local%20images/about%20us%20section.jpeg"
+                  src="/gallery/about-us-section.jpeg"
                   alt="PERAMIHO Events Team"
                   width={600}
                   height={700}

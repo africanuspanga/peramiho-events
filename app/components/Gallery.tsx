@@ -4,15 +4,15 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 
 const galleryImages = [
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.03.jpeg", alt: "Event Setup" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.06%20(1).jpeg", alt: "Stage Design" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.54.06.jpeg", alt: "Lighting Setup" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.08.jpeg", alt: "Event Production" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.18.jpeg", alt: "Sound System" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.20%20(1).jpeg", alt: "Corporate Event" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.20.jpeg", alt: "Branding Setup" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.22.jpeg", alt: "Wedding Event" },
-  { src: "/local%20images/WhatsApp%20Image%202026-04-08%20at%2012.56.24.jpeg", alt: "Concert Setup" },
+  { src: "/gallery/gallery-1.jpeg", alt: "Event Setup" },
+  { src: "/gallery/gallery-2.jpeg", alt: "Stage Design" },
+  { src: "/gallery/gallery-3.jpeg", alt: "Lighting Setup" },
+  { src: "/gallery/gallery-4.jpeg", alt: "Event Production" },
+  { src: "/gallery/gallery-5.jpeg", alt: "Sound System" },
+  { src: "/gallery/gallery-6.jpeg", alt: "Corporate Event" },
+  { src: "/gallery/gallery-7.jpeg", alt: "Branding Setup" },
+  { src: "/gallery/gallery-8.jpeg", alt: "Wedding Event" },
+  { src: "/gallery/gallery-9.jpeg", alt: "Concert Setup" },
 ];
 
 export default function Gallery() {
@@ -70,6 +70,7 @@ export default function Gallery() {
                       src={image.src}
                       alt={image.alt}
                       fill
+                      sizes="320px"
                       className="object-cover transition-transform duration-500 group-hover:scale-110"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
