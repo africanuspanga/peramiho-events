@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 export default function WhatsAppButton() {
   return (
@@ -20,15 +20,20 @@ export default function WhatsAppButton() {
         <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-1 w-2 h-2 bg-white rotate-45" />
       </div>
 
-      {/* Button */}
+      {/* Button with WhatsApp Image */}
       <div className="relative">
         {/* Pulse Animation */}
         <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20" />
         <div className="absolute inset-0 bg-green-500 rounded-full animate-pulse opacity-40" style={{ animationDelay: '0.5s' }} />
         
-        {/* Main Button */}
-        <div className="relative w-14 h-14 bg-gradient-to-br from-green-500 to-green-600 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
-          <MessageCircle className="w-7 h-7 text-white fill-white" />
+        {/* Main Button with WhatsApp PNG */}
+        <div className="relative w-14 h-14 rounded-full overflow-hidden shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300">
+          <Image
+            src="/whatsapp.png"
+            alt="WhatsApp"
+            fill
+            className="object-cover"
+          />
         </div>
       </div>
     </motion.a>

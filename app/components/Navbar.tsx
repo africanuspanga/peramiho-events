@@ -40,23 +40,17 @@ export default function Navbar() {
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
-            {/* Logo */}
-            <Link href="/" className="flex items-center gap-3 group">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-primary/30 group-hover:border-emerald-primary transition-colors duration-300">
+            {/* Logo - Using actual logo image */}
+            <Link href="/" className="flex items-center group">
+              <div className="relative h-14 w-auto">
                 <Image
-                  src="/peramiho favicon.png"
+                  src="/Peramiho Events logo.png"
                   alt="PERAMIHO Events"
-                  fill
-                  className="object-cover"
+                  width={180}
+                  height={56}
+                  className="h-14 w-auto object-contain"
+                  priority
                 />
-              </div>
-              <div className="hidden sm:block">
-                <span className="font-serif text-xl font-bold text-white tracking-wide">
-                  PERAMIHO
-                </span>
-                <span className="block text-[10px] text-emerald-primary tracking-[0.2em] uppercase">
-                  Events & Designing
-                </span>
               </div>
             </Link>
 

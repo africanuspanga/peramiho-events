@@ -6,7 +6,7 @@ import { Clock, Award, Users, Headphones, Calendar, MapPin } from "lucide-react"
 const reasons = [
   {
     icon: Clock,
-    title: "13+ Years Experience",
+    title: "15+ Years Experience",
     description: "Over a decade of experience in event production across Tanzania.",
   },
   {

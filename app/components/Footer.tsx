@@ -29,22 +29,15 @@ export default function Footer() {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-12">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <Link href="/" className="flex items-center gap-3 mb-6">
-              <div className="relative w-12 h-12 rounded-full overflow-hidden border-2 border-emerald-primary/30">
+            <Link href="/" className="flex items-center mb-6">
+              <div className="relative h-12 w-auto">
                 <Image
-                  src="/peramiho favicon.png"
+                  src="/Peramiho Events logo.png"
                   alt="PERAMIHO Events"
-                  fill
-                  className="object-cover"
+                  width={160}
+                  height={48}
+                  className="h-12 w-auto object-contain"
                 />
-              </div>
-              <div>
-                <span className="font-serif text-lg font-bold tracking-wide">
-                  PERAMIHO
-                </span>
-                <span className="block text-[10px] text-emerald-primary tracking-[0.15em] uppercase">
-                  Events & Designing
-                </span>
               </div>
             </Link>
             <p className="text-white/60 text-sm leading-relaxed mb-6">

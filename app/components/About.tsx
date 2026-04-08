@@ -26,14 +26,14 @@ export default function About() {
             className="relative"
           >
             <div className="relative">
-              {/* Main Image */}
+              {/* Main Image - Using local/about us section.jpeg */}
               <div className="relative rounded-3xl overflow-hidden shadow-2xl">
                 <Image
-                  src="/empty-seats-row-convention-center.jpg"
-                  alt="Event Venue"
+                  src="/local images/about us section.jpeg"
+                  alt="PERAMIHO Events Team"
                   width={600}
                   height={700}
-                  className="w-full h-[500px] object-cover"
+                  className="w-full h-[400px] sm:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/40 to-transparent" />
               </div>
@@ -44,12 +44,12 @@ export default function About() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ duration: 0.6, delay: 0.3 }}
-                className="absolute -bottom-8 -right-8 bg-white p-6 rounded-2xl shadow-2xl border border-slate-100"
+                className="absolute -bottom-8 -right-4 sm:-right-8 bg-white p-4 sm:p-6 rounded-2xl shadow-2xl border border-slate-100"
               >
                 <div className="flex items-center gap-4">
-                  <div className="w-16 h-16 bg-emerald-primary/10 rounded-full flex items-center justify-center">
-                    <span className="text-3xl font-bold text-emerald-primary">
-                      13+
+                  <div className="w-14 h-14 sm:w-16 sm:h-16 bg-emerald-primary/10 rounded-full flex items-center justify-center">
+                    <span className="text-2xl sm:text-3xl font-bold text-emerald-primary">
+                      15+
                     </span>
                   </div>
                   <div>
@@ -82,7 +82,7 @@ export default function About() {
               </span>
             </div>
 
-            <h2 className="font-serif text-4xl lg:text-5xl font-bold text-navy-dark mb-6 leading-tight">
+            <h2 className="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-navy-dark mb-6 leading-tight">
               About PERAMIHO EVENTS AND DESIGNING
             </h2>
 

@@ -136,3 +136,20 @@
 .img-zoom:hover img {
   transform: scale(1.08);
 }
+
+/* Hide Scrollbar for Gallery */
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile Touch Action */
+@media (max-width: 768px) {
+  .touch-pan-x {
+    touch-action: pan-x;
+  }
+}

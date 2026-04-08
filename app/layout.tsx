@@ -18,6 +18,11 @@ export const metadata: Metadata = {
   title: "PERAMIHO Events and Designing | Professional Event Production Tanzania",
   description: "Event equipment rental, sound systems, staging, lighting and full event production services in Dar es Salaam, Tanzania. Since 2011.",
   keywords: "event production, sound systems, lighting, staging, Tanzania, Dar es Salaam, equipment rental",
+  icons: {
+    icon: "/peramiho favicon.png",
+    shortcut: "/peramiho favicon.png",
+    apple: "/peramiho favicon.png",
+  },
 };
 
 export default function RootLayout({
