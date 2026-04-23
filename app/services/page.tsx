@@ -17,7 +17,7 @@ const serviceCategories = [
     icon: Volume2,
     title: "Sound Systems",
     description: "Professional audio solutions for events of any size",
-    image: "/gallery/gallery-5.jpeg",
+    image: "/gallery/gallery-1.jpeg",
     items: [
       "Heavy-duty digital sound systems",
       "Mini sound systems for intimate gatherings",
@@ -43,7 +43,7 @@ const serviceCategories = [
     icon: Tent,
     title: "Tents & Structures",
     description: "Weather-resistant structures for outdoor events",
-    image: "/istockphoto-458865833-612x612.jpg",
+    image: "/gallery/gallery-5.jpeg",
     items: [
       "Marquee tents (20x5, 15x5, 10x5)",
       "Pagoda tents for elegant events",
@@ -56,7 +56,7 @@ const serviceCategories = [
     icon: Palette,
     title: "Branding & Decorations",
     description: "Transform your venue with professional decor",
-    image: "/chandelier-with-flowers-greenery-hangs-dinner-table.jpg",
+    image: "/gallery/gallery-6.jpeg",
     items: [
       "Custom banners and backdrops",
       "VIP lounge setups",
@@ -82,7 +82,7 @@ const serviceCategories = [
     icon: Camera,
     title: "Media Services",
     description: "Capture every moment professionally",
-    image: "/gallery/gallery-9.jpeg",
+    image: "/istockphoto-2216677600-612x612.jpg",
     items: [
       "Professional videography",
       "Event photography",
@@ -108,7 +108,7 @@ const serviceCategories = [
     icon: Package,
     title: "Equipment Hiring",
     description: "Essential equipment for any event",
-    image: "/empty-seats-row-convention-center.jpg",
+    image: "/gallery/gallery-7.jpeg",
     items: [
       "Chairs and tables (various styles)",
       "VIP chairs and sofas",

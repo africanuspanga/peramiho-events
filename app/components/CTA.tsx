@@ -48,7 +48,7 @@ export default function CTA() {
           {/* Buttons */}
           <div className="flex flex-wrap justify-center gap-4">
             <a
-              href="tel:+255755920515"
+              href="tel:+255769940569"
               className="group inline-flex items-center gap-2 px-8 py-4 bg-white text-emerald-primary font-bold rounded-full hover:bg-slate-100 transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
             >
               <Phone className="w-5 h-5" />

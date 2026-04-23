@@ -10,7 +10,7 @@ const services = [
     icon: Volume2,
     title: "Sound Systems (PA)",
     description: "Heavy-duty digital sound systems and mini sound systems for all event sizes.",
-    image: "/istockphoto-1135340900-612x612.jpg",
+    image: "/istockphoto-2021242696-612x612.jpg",
   },
   {
     icon: Lightbulb,
@@ -34,7 +34,7 @@ const services = [
     icon: Monitor,
     title: "LED Screens",
     description: "Indoor and outdoor LED screen installations for events.",
-    image: "/istockphoto-134423308-612x612.jpg",
+    image: "/gallery/gallery-6.jpeg",
   },
   {
     icon: Camera,
@@ -52,7 +52,7 @@ const services = [
     icon: Package,
     title: "Equipment Hiring",
     description: "Chairs, tables, generators, and mobile toilets (VIP & public).",
-    image: "/istockphoto-2178715155-612x612.jpg",
+    image: "/empty-seats-row-convention-center.jpg",
   },
 ];
 

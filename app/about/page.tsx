@@ -5,6 +5,7 @@ import Image from "next/image";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import WhatsAppButton from "../components/WhatsAppButton";
+import Certificates from "../components/Certificates";
 import { Target, Eye, Heart, Award, Shield, Leaf, Users, TrendingUp } from "lucide-react";
 
 const values = [
@@ -220,6 +221,7 @@ export default function AboutPage() {
             </div>
           </div>
         </section>
+        <Certificates />
       </main>
       <Footer />
       <WhatsAppButton />

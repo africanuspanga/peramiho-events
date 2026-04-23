@@ -12,8 +12,8 @@ const contactInfo = [
   {
     icon: Phone,
     title: "Phone",
-    items: ["+255 755 920 515", "+255 655 920 515"],
-    href: "tel:+255755920515",
+    items: ["+255 769 940 569", "+255 655 920 515"],
+    href: "tel:+255769940569",
   },
   {
     icon: Mail,
@@ -58,7 +58,21 @@ export default function ContactPage() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission here
+
+    const message = encodeURIComponent(
+      `Hello PERAMIHO Events,\n\n` +
+        `My name is ${formData.name}.\n` +
+        `I am interested in a ${formData.eventType || "general"} event.\n\n` +
+        `${formData.message}\n\n` +
+        `You can reach me at: ${formData.phone}${formData.email ? " / " + formData.email : ""}`
+    );
+
+    window.open(
+      `https://wa.me/255655920515?text=${message}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+
     setIsSubmitted(true);
     setTimeout(() => setIsSubmitted(false), 3000);
   };
@@ -167,7 +181,7 @@ export default function ContactPage() {
                     allowFullScreen
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
-                    className="grayscale hover:grayscale-0 transition-all duration-500"
+                    className="rounded-2xl"
                   />
                 </div>
               </motion.div>

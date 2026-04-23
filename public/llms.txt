@@ -1,0 +1,62 @@
+# PERAMIHO Events and Designing
+
+> PERAMIHO Events and Designing is a leading Tanzanian event production and equipment rental company based in Dar es Salaam. Established in 2011 and officially registered in 2016, the company provides comprehensive event solutions including sound systems, staging, lighting, LED screens, tents, branding, videography, photography, catering, and equipment hiring.
+
+## Overview
+
+- **Company Name:** PERAMIHO Events and Designing
+- **Founded:** 2011 (Registered 2016)
+- **Location:** Chang'ombe Maduka Mawili, Dar es Salaam, Tanzania
+- **Branch:** Buza Mnarani, Dar es Salaam
+- **Ownership:** 100% Tanzanian citizen-owned
+- **Phone:** +255 769 940 569 / +255 655 920 515
+- **Email:** peramihoevents@gmail.com
+- **Website:** https://www.peramihoevents.co.tz
+- **Instagram:** https://www.instagram.com/peramiho_events/
+
+## Services
+
+1. **Sound Systems (PA)** — Heavy-duty digital and mini sound systems, wireless microphones, DJ equipment, stage monitors
+2. **Staging & Lighting** — Aluminium performance stages, VIP platforms, LED and intelligent lighting, spotlights, backdrops
+3. **Tents & Structures** — Marquee tents (20×5, 15×5, 10×5), pagoda tents, clear span structures, flooring
+4. **Branding & Decorations** — Custom banners, VIP lounge setups, red carpets, floral arrangements, themed decorations
+5. **LED Screens** — Indoor and outdoor LED video walls, digital signage, live streaming setup
+6. **Media Services** — Professional videography, event photography, photo booth rentals, video editing and albums
+7. **Catering & Exhibition** — Full-service catering, exhibition booth setups, food service equipment, beverage stations
+8. **Equipment Hiring** — Chairs and tables, VIP chairs and sofas, portable generators, mobile toilets (VIP & public), cooling fans and AC units
+
+## Notable Clients
+
+- Bank of Tanzania
+- CRDB Bank
+- NMB Bank
+- Tanzania Railways Corporation
+- TRA (Tanzania Revenue Authority)
+- TPA (Tanzania Ports Authority)
+- CCM (Chama Cha Mapinduzi)
+- TIA (Tanzania Institute of Accountancy)
+- UDSM (University of Dar es Salaam)
+
+## Compliance & Certifications
+
+- Business Registration Certificate (BRELA, registered 2016)
+- TIN Certificate
+- VAT Registration
+- Tax Clearance Certificate (TRA)
+- Business License (Tememe Municipal Council)
+
+## Website Structure
+
+- **Homepage** (`/`) — Overview of services, gallery, testimonials, client logos, and call-to-action
+- **About** (`/about`) — Company story, vision, mission, core values, statistics, certificates
+- **Services** (`/services`) — Detailed breakdown of all 8 service categories
+- **Contact** (`/contact`) — Contact information, Google Maps embed, and inquiry form
+
+## Technology Stack
+
+- Next.js 16 (App Router, Static Export)
+- React 19 + TypeScript
+- Tailwind CSS v4
+- Framer Motion (animations)
+- Lucide React (icons)
+- Google Fonts: Playfair Display + DM Sans

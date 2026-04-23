@@ -99,11 +99,11 @@ export default function Footer() {
             <ul className="space-y-4">
               <li>
                 <a
-                  href="tel:+255755920515"
+                  href="tel:+255769940569"
                   className="flex items-center gap-3 text-white/60 hover:text-emerald-primary transition-colors"
                 >
                   <Phone className="w-4 h-4" />
-                  <span className="text-sm">+255 755 920 515</span>
+                  <span className="text-sm">+255 769 940 569</span>
                 </a>
               </li>
               <li>
@@ -142,8 +142,16 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/40 text-sm">
-              © {new Date().getFullYear()} PERAMIHO Events and Designing. All
-              rights reserved.
+              © 2026 PERAMIHO Events and Designing. All{" "}
+              rights reserved.{" "}
+              <a
+                href="https://www.driftmark.co.tz/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="sr-only"
+              >
+                Website by Driftmark
+              </a>
             </p>
             <p className="text-white/40 text-sm">
               Designed with excellence in Tanzania

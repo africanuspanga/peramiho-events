@@ -6,7 +6,7 @@ import Gallery from "./components/Gallery";
 import Clients from "./components/Clients";
 import WhyChooseUs from "./components/WhyChooseUs";
 import Testimonials from "./components/Testimonials";
-import Certificates from "./components/Certificates";
+
 import CTA from "./components/CTA";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton";
@@ -23,7 +23,6 @@ export default function Home() {
         <Clients />
         <WhyChooseUs />
         <Testimonials />
-        <Certificates />
         <CTA />
       </main>
       <Footer />

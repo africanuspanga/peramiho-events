@@ -2,6 +2,8 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
 
 const galleryImages = [
   { src: "/gallery/gallery-1.jpeg", alt: "Event Setup" },
@@ -16,6 +18,9 @@ const galleryImages = [
 ];
 
 export default function Gallery() {
+  // Duplicate images for seamless infinite loop
+  const doubledImages = [...galleryImages, ...galleryImages];
+
   return (
     <section className="py-24 bg-cream overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -40,60 +45,52 @@ export default function Gallery() {
             Browse through our portfolio of successful events and setups across Tanzania.
           </p>
         </motion.div>
+      </div>
 
-        {/* Scrolling Gallery Container */}
-        <div className="relative">
-          {/* Gradient Overlays for Scroll Indication */}
-          <div className="absolute left-0 top-0 bottom-0 w-16 bg-gradient-to-r from-cream to-transparent z-10 pointer-events-none" />
-          <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none" />
-          
-          {/* Scrolling Images */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8 }}
-            className="overflow-x-auto pb-4 -mx-4 px-4 scrollbar-hide"
-          >
-            <div className="flex gap-6 w-max">
-              {galleryImages.map((image, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.5, delay: index * 0.05 }}
-                  className="group relative flex-shrink-0 w-[280px] sm:w-[320px]"
-                >
-                  <div className="relative h-[200px] sm:h-[240px] rounded-2xl overflow-hidden shadow-lg bg-slate-200">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      sizes="320px"
-                      className="object-cover transition-transform duration-500 group-hover:scale-110"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                    <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-                      <p className="text-white font-medium text-sm">{image.alt}</p>
-                    </div>
-                  </div>
-                </motion.div>
-              ))}
+      {/* Auto-scrolling Marquee */}
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8 }}
+        className="relative w-full"
+      >
+        {/* Right fade only */}
+        <div className="absolute right-0 top-0 bottom-0 w-16 bg-gradient-to-l from-cream to-transparent z-10 pointer-events-none" />
+
+        <div className="flex gap-6 animate-marquee hover:[animation-play-state:paused]">
+          {doubledImages.map((image, index) => (
+            <div
+              key={index}
+              className="group relative flex-shrink-0 w-[280px] sm:w-[320px]"
+            >
+              <div className="relative h-[200px] sm:h-[240px] rounded-2xl overflow-hidden shadow-lg bg-slate-200">
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  fill
+                  sizes="320px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-navy-dark/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+                  <p className="text-white font-medium text-sm">{image.alt}</p>
+                </div>
+              </div>
             </div>
-          </motion.div>
-          
-          {/* Scroll Hint */}
-          <p className="text-center text-slate-400 text-sm mt-4 flex items-center justify-center gap-2">
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18" />
-            </svg>
-            Swipe or scroll to see more
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-            </svg>
-          </p>
+          ))}
         </div>
+      </motion.div>
+
+      {/* View Full Gallery CTA */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 text-center">
+        <Link
+          href="/gallery"
+          className="group inline-flex items-center gap-2 px-8 py-4 bg-navy-dark hover:bg-navy-light text-white font-semibold rounded-full transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
+        >
+          View Full Gallery
+          <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+        </Link>
       </div>
     </section>
   );
