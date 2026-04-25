@@ -81,7 +81,7 @@ export const metadata: Metadata = {
     canonical: "https://www.peramihoevents.co.tz",
   },
   verification: {
-    google: "google-site-verification-code",
+    google: "googlec84a6bc1ef92d42b",
   },
 };
 
